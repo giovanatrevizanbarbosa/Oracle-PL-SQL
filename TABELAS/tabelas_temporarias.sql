@@ -1,0 +1,5 @@
+CREATE GLOBAL TEMPORARY TABLE temporary_estoque
+ON COMMIT PRESERVE ROWS
+AS SELECT * FROM estoque;
+
+SELECT * FROM temporary_estoque;
